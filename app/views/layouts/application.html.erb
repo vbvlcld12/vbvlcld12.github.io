@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>EAT KU ACT KU</title>
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Shadows+Into+Light" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body>
+<!-- view count -->
+<nav class="gnb-header">
+    <div class="top clearfix">
+        <ul class="count clearfix">
+            <li class="clearfix"><img src="/assets/icon_time"> 
+                <p id="demo"></p>
+            </li>
+            <li class="clearfix"><img src="/assets/icon_view">
+                <p><script>page_counter(jcount);</script></p>
+            </li>
+        </ul>
+        <ul class="user clearfix">
+            <li><a href="#">LOGIN</a></li>
+            <li><a href="#">JOIN</a></li>
+            <!--<li class="bgm"><embed src="audio/LuvLetter.mp3" loop="infinite" hidden="true"></embed>-->
+            <!--    <img src="/assets/icon_equilizer.gif">-->
+            <!--</li>-->
+        </ul>
+    </div>
+    <div class="liner_wrapper"></div>
+    <div class="menu clearfix">
+        <a href="/home/index" class="logo">LOGO</a>
+        <ul class="clearfix">
+            <li><a href="/home/sub1">NOL-PAGO</a></li>
+            <li><a href="/home/sub2">PUB MENU</a></li>
+            <li><a href="/home/sub3">LINE UP</a></li>
+            <li><a href="#">GALLERY</a></li>
+        </ul>
+    </div>
+</nav>
+
+<%= yield %>
+
+<footer class="gnb-footer">
+    <div class="nav-footer clearfix">
+        <a href="/home/index" class="logo">LOGO</a>
+        <ul class="clearfix">
+            <li><a href="/home/sub1">NOL-PAGO</a></li>
+            <li><a href="/home/sub2">PUB MENU</a></li>
+            <li><a href="/home/sub3">LINE UP</a></li>
+            <li><a href="#">GALLERY</a></li>
+        </ul>
+    </div>
+    <div class="liner_wrapper-bk"></div>
+    <div class="clearfix">
+        <div class="developer clearfix">
+            <h4>DEVELOPER:</h4>
+            <ul class="male clearfix">
+                <li class="male">
+                    <a href="#">
+                        <div class="face-3"></div>
+                        <p>임 헌</p>
+                    </a>
+                </li>
+                <li class="male">
+                    <a href="#">
+                        <div class="face-4"></div>
+                        <p>채우준</p>
+                    </a>
+                </li>
+                <li class="male">
+                    <a href="https://www.instagram.com/jaja_zzzz/">
+                      <div class="face-5"></div>
+                      <p>정원두</p>
+                    </a>
+                </li>
+            </ul>
+            <ul class="female clearfix">
+                <li class="female">
+                    <a href="https://www.instagram.com/ingingj_lee/">
+                      <div class="face-6"></div>
+                      <p>이인재</p>
+                    </a>
+                </li>
+                <li class="female">
+                    <a href="https://www.facebook.com/profile.php?id=100002885441653">
+                      <div class="face-7"></div>
+                      <p>이현지</p>
+                    </a>
+                </li>
+                <li class="female">
+                    <a href="https://www.instagram.com/cheay_eon/">
+                      <div class="face-8"></div>
+                      <p>김채연</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="tutor">
+            <h4>TUTOUR:</h4>
+                <ul class="male clearfix">
+                    <li class="male">
+                        <a href="#">
+                            <div class="face-1"></div>
+                            <p>김준호</p>
+                        </a>
+                    </li>
+                    <li class="male">
+                        <a href="http://www.lissasleeckx.be/404.html">
+                            <div class="face-2"></div>
+                            <p>유찬호</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        <div class="sns clearfix">
+            <h4>Connect with us:</h4>
+            <ul class="clearfix">
+              <li><a href="https://www.facebook.com/%EC%9D%B4%EC%BF%A0%EC%97%90%EC%BF%A0-303305200108142/"><img src="/assets/icon_facebook.png"></a></li>
+              <li><a href="instagram"><img src="/assets/icon_instagram.png"></a></li>
+              <li><a href="twitter"><img src="/assets/icon_twitter.png"></a></li>
+              <li><a href="youtube"><img src="/assets/icon_youtube.png"></a></li>
+            </ul>
+        </div>
+    </div>
+    <p class="copyright">Copyright © Likelion at Konkuk glocal, 2017</p>
+</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,1227 @@
+/* line 5, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: #F6F6F6;
+}
+
+/* line 19, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.table_cell {
+  width: 100%;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 27, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.table_cell_btm {
+  width: 100%;
+  height: 100%;
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+/* line 34, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.liner_bk {
+  width: 60px;
+  height: 2px;
+  margin: 30px 0px;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: inline-block;
+}
+
+/* line 42, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.liner_wh {
+  width: 60px;
+  height: 2px;
+  margin: 30px 0px;
+  background-color: rgba(255, 255, 255, 0.4);
+  display: inline-block;
+}
+
+/* line 50, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.liner_bk_small {
+  width: 30px;
+  height: 2px;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: inline-block;
+}
+
+/* line 58, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.liner_wrapper {
+  width: 100%;
+  height: 1px;
+  margin: 10px 0px;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: inline-block;
+}
+
+/* line 66, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.liner_wrapper-bk {
+  width: 100%;
+  height: 1px;
+  margin: 20px 0px;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: inline-block;
+}
+
+/* line 76, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+[class*="gnb-"] {
+  font-family: 'Noto Sans', sans-serif;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 100;
+}
+
+/* line 83, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.gnb-header {
+  width: 100%;
+  height: 12%;
+  display: table;
+  padding: 30px 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, transparent 100%);
+  z-index: 1000;
+  position: fixed;
+}
+
+/* line 94, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.top {
+  padding: 0 30px;
+}
+
+/* line 96, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.count {
+  float: left;
+}
+
+/* line 97, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.count li {
+  float: left;
+}
+
+/* line 99, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.count li img, .count li p {
+  float: left;
+}
+
+/* line 101, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.count li img, .user li img {
+  width: auto;
+  height: 10px;
+  opacity: 0.8;
+  margin-right: 5px;
+}
+
+/* line 108, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.count li {
+  font-size: 11px;
+  margin-top: 1px;
+  margin-right: 10px;
+}
+
+/* line 115, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.user {
+  float: right;
+}
+
+/* line 117, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.user li {
+  float: left;
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+/* line 123, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.user .bgm {
+  margin-left: 10px;
+}
+
+/* line 125, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.user li a {
+  transition: all .2s ease-in-out;
+}
+
+/* line 126, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.user li a:hover {
+  opacity: 0.6;
+  transition: all .2s ease-in-out;
+}
+
+/* line 132, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.menu {
+  width: 100%;
+  height: auto;
+  padding: 0px 30px;
+}
+
+/* line 138, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.logo {
+  font-size: 30px;
+  float: left;
+}
+
+/* line 143, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.menu ul {
+  float: right;
+  margin-right: 50px;
+}
+
+/* line 148, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.menu ul li {
+  margin: 15px 10px 0 0;
+  font-size: 11px;
+  opacity: 0.8;
+  float: left;
+}
+
+/* line 155, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.menu ul li a {
+  transition: all .2s ease-in-out;
+}
+
+/* line 156, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.menu ul li a:hover {
+  opacity: 0.6;
+  transition: all .2s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  /* line 164, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .top {
+    padding: 0 40px;
+  }
+
+  /* line 166, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .count li {
+    font-size: 13px;
+    margin-right: 20px;
+  }
+
+  /* line 171, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .user li {
+    float: left;
+    font-size: 13px;
+    margin-left: 30px;
+  }
+
+  /* line 177, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .user .bgm {
+    margin-left: 20px;
+  }
+
+  /* line 180, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .menu {
+    padding: 0px 40px;
+  }
+
+  /* line 182, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .logo {
+    font-size: 40px;
+  }
+
+  /* line 184, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .menu ul {
+    float: right;
+    margin-right: 50px;
+  }
+
+  /* line 189, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .menu ul li {
+    margin: 15px 30px 0 0;
+    font-size: 15px;
+    opacity: 0.8;
+    float: left;
+  }
+}
+/* line 201, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.gnb-footer {
+  width: 100%;
+  height: auto;
+  padding: 30px 0;
+  background-image: url(/assets/footer_1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  color: black;
+}
+
+/* line 214, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.nav-footer {
+  width: 100%;
+  height: auto;
+}
+
+/* line 219, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.nav-footer .logo {
+  font-size: 26px;
+  margin-left: 30px;
+  float: left;
+}
+
+/* line 225, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.nav-footer ul {
+  float: right;
+  margin-right: 30px;
+}
+
+/* line 230, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.nav-footer ul li {
+  font-size: 11px;
+  opacity: 0.8;
+  margin: 12px 10px 0 0;
+  float: left;
+}
+
+/* line 237, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.nav-footer ul li a {
+  transition: all .2s ease-in-out;
+}
+
+/* line 238, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.nav-footer ul li a:hover {
+  opacity: 0.6;
+  transition: all .2s ease-in-out;
+}
+
+/* line 244, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.developer, .tutor {
+  padding: 0 30px;
+  float: left;
+}
+
+/* line 249, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.developer ul li, .tutor ul li {
+  font-size: 13px;
+  margin-right: 15px;
+  text-align: center;
+  float: left;
+}
+
+/* line 256, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+[class*="face-"] {
+  width: 30px;
+  height: 30px;
+  opacity: 0.8;
+  border-radius: 20px;
+  display: inline-block;
+  transition: all .2s ease-in-out;
+}
+
+/* line 265, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.face-1 {
+  background-image: url(/assets/profile_jh.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 271, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.face-2 {
+  background-image: url(/assets/profile_ch.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 277, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.face-3 {
+  background-image: url(/assets/profile_lh.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 283, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.face-4 {
+  background-image: url(/assets/profile_wj.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 289, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.face-5 {
+  background-image: url(/assets/profile_wd.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 295, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.face-6 {
+  background-image: url(/assets/profile_ij.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 301, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.face-7 {
+  background-image: url(/assets/profile_hj.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 307, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.face-8 {
+  background-image: url(/assets/profile_cy.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 313, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.female {
+  margin-top: 5px;
+}
+
+/* line 315, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.male a, .female a {
+  transition: all .2s ease-in-out;
+}
+
+/* line 316, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.male a:hover, .female a:hover {
+  opacity: 0.6;
+  transition: all .2s ease-in-out;
+}
+
+/* line 321, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.developer li p, .tutor li p {
+  opacity: 0.7;
+  margin-top: 3px;
+}
+
+/* line 329, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.sns {
+  padding: 0 30px;
+  text-align: right;
+  float: right;
+}
+
+/* line 335, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.sns h4 {
+  margin-top: 48px;
+}
+
+/* line 337, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.sns ul {
+  float: right;
+}
+
+/* line 338, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.sns ul li {
+  float: left;
+}
+
+/* line 340, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.sns a {
+  margin-left: 10px;
+  transition: all .2s ease-in-out;
+}
+
+/* line 344, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.sns a:hover {
+  opacity: 0.6;
+  transition: all .2s ease-in-out;
+}
+
+/* line 349, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.sns a img {
+  width: auto;
+  height: 26px;
+  opacity: 0.8;
+}
+
+/* line 358, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.developer h4, .sns h4, .tutor h4 {
+  font-size: 11px;
+  font-weight: 100;
+  opacity: 0.9;
+  margin-bottom: 10px;
+}
+
+/* line 366, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.copyright {
+  font-size: 12px;
+  text-align: center;
+  display: block;
+  margin-top: 30px;
+  opacity: 0.9;
+}
+
+@media (min-width: 768px) {
+  /* line 377, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .nav-footer .logo {
+    width: auto;
+    height: 30px;
+    font-size: 30px;
+    margin-left: 40px;
+    float: left;
+  }
+
+  /* line 385, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .nav-footer ul {
+    margin-right: 40px;
+  }
+
+  /* line 387, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .nav-footer ul li {
+    font-size: 13px;
+    margin: 15px 30px 0 0;
+  }
+
+  /* line 393, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .developer, .tutor {
+    padding: 0 30px;
+  }
+
+  /* line 395, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  [class*="face-"] {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* line 400, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .male, .female {
+    float: left;
+  }
+
+  /* line 401, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .female {
+    margin-top: 0px;
+  }
+
+  /* line 404, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .sns {
+    padding: 0 40px;
+  }
+
+  /* line 406, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .sns h4 {
+    margin-top: 0px;
+  }
+
+  /* line 408, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .sns a img {
+    height: 30px;
+  }
+
+  /* line 411, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .developer h4, .sns h4, .tutor h4 {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+
+  /* line 416, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .developer ul li, .tutor ul li {
+    font-size: 11px;
+    margin-right: 20px;
+  }
+
+  /* line 421, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .developer li p, .tutor li p {
+    margin-top: 5px;
+  }
+
+  /* line 424, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .copyright {
+    font-size: 14px;
+    margin-top: 40px;
+  }
+}
+/* line 436, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.banner_head {
+  width: 100%;
+  height: 100%;
+  background-image: url(/assets/banner_head_1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  display: table;
+  font-family: 'Noto Sans', sans-serif;
+  text-align: center;
+}
+
+/* line 449, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.banner_head h1 {
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+/* line 454, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.sub_title {
+  font-size: 18px;
+  margin-bottom: 40px;
+  opacity: 0.7;
+}
+
+/* line 460, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.date {
+  font-size: 10px;
+  opacity: 0.6;
+}
+
+@media (min-width: 768px) {
+  /* line 468, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .banner_head h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
+
+  /* line 473, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .sub_title {
+    font-size: 24px;
+  }
+
+  /* line 474, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .date {
+    font-size: 14px;
+  }
+}
+/* line 481, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+[class*="img-"] {
+  width: 50%;
+  height: 100%;
+  background-color: #afafaf;
+}
+
+/* line 487, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+[class*="txt-"] {
+  width: 50%;
+  height: 100%;
+  display: table;
+}
+
+/* line 493, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+[class*="txt-"] h2 {
+  font-size: 30px;
+  opacity: 0.9;
+}
+
+/* line 498, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+[class*="txt-"] p {
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: -0.05em;
+  font-family: 'Noto Sans KR', sans-serif;
+  opacity: 0.7;
+}
+
+/* line 506, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.btn {
+  margin-top: 30px;
+  font-size: 12px;
+  text-align: center;
+  padding: 10px 20px;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: all .2s ease-in-out;
+}
+
+/* line 517, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.btn:hover {
+  opacity: 0.6;
+  transition: all .2s ease-in-out;
+}
+
+/* line 523, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.nol-pago {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 528, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.nol-pago .left {
+  float: left;
+}
+
+/* line 529, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.nol-pago .right {
+  display: table;
+}
+
+/* line 531, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.nol-pago .table_cell, .pub-menu .table_cell {
+  color: black;
+  padding: 30px;
+}
+
+/* line 536, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.img-1 {
+  background-image: url(/assets/nol_pago_home.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  background-attachment: fixed;
+}
+
+/* line 546, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.pub-menu {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 551, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.pub-menu .left, .pub-menu .right {
+  float: left;
+}
+
+/* line 553, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.pub-menu .left {
+  display: table;
+}
+
+/* line 555, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.pub-menu .table_cell {
+  text-align: right;
+}
+
+/* line 557, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.img-2 {
+  background-image: url(/assets/pub_menu_home.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  background-attachment: fixed;
+}
+
+/* line 566, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.line-up {
+  width: 100%;
+  height: auto;
+  background-image: url(/assets/line_up_1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  text-align: center;
+  color: black;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+/* line 579, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.line-up h2 {
+  font-size: 30px;
+  padding-top: 40px;
+  margin-bottom: 10px;
+  opacity: 0.9;
+}
+
+/* line 586, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.line-up p {
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  opacity: 0.7;
+}
+
+/* line 593, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.card li {
+  padding: 10px;
+}
+
+/* line 595, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.card_bg {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* line 600, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+[class*="card-box-"] {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 605, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.card-box-1 {
+  background-image: url(/assets/card_1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 652, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.line-up .btn {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  /* line 673, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  [class*="txt-"] h2 {
+    font-size: 40px;
+  }
+
+  /* line 675, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  [class*="txt-"] p {
+    font-size: 14px;
+  }
+
+  /* line 677, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .btn {
+    margin-top: 40px;
+    font-size: 14px;
+  }
+
+  /* line 684, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .nol-pago {
+    height: 70%;
+  }
+
+  /* line 686, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .img-1 {
+    background-size: contain;
+  }
+
+  /* line 688, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .nol-pago .table_cell, .pub-menu .table_cell {
+    padding: 40px;
+  }
+
+  /* line 691, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .line-up h2 {
+    font-size: 40px;
+  }
+
+  /* line 693, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .line-up p {
+    font-size: 14px;
+  }
+}
+/* line 701, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+[class*="banner-"] {
+  width: 100%;
+  height: 80%;
+  display: table;
+  text-align: center;
+}
+
+/* line 708, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+[class*="banner-"] h2 {
+  font-size: 60px;
+  font-family: 'Noto Sans', sans-serif;
+  opacity: 0.9;
+}
+
+/* line 714, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+[class*="banner-"] p {
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 150%;
+  opacity: 0.8;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* line 723, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.banner-nol_pago {
+  background-image: url(/assets/nol_pago_1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+/* line 731, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.nol-pago-face {
+  width: 200px;
+  height: auto;
+  opacity: 0.9;
+  margin-bottom: 10px;
+}
+
+/* line 738, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.nol-pago-talk {
+  font-size: 30px;
+  font-family: 'Noto Sans', sans-serif;
+  margin-bottom: 10px;
+}
+
+/* line 744, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.pick-course, .pick-games {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: table;
+}
+
+/* line 751, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.how-to-play {
+  font-size: 11px;
+  opacity: 0.8;
+}
+
+/* line 756, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.list {
+  padding: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  margin-top: 40px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* line 764, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.pick-course ul li, .pick-course ul li p, .pick-games ul li, .pick-games ul li p {
+  float: left;
+}
+
+/* line 766, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.pick-up {
+  font-size: 30px;
+  opacity: 0.9;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+/* line 773, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.pick-up-and {
+  font-size: 18px;
+  opacity: 0.7;
+  margin-top: 15px;
+  margin-right: 20px;
+}
+
+/* line 780, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.reset {
+  margin-top: 40px;
+  position: relative;
+  border-bottom: 4px solid black;
+  border-radius: 2px;
+  transition: all .2s eas-in-out;
+}
+
+/* line 788, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.reset:hover {
+  top: 2px;
+}
+
+/* line 792, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.reset img {
+  width: auto;
+  height: 11px;
+  margin-left: 5px;
+}
+
+/* line 799, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.pick-course {
+  background-image: url(/assets/course_pattern.png);
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+}
+
+/* line 805, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.pick-course .nol-pago-talk {
+  font-weight: 600;
+}
+
+/* line 809, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.pick-course .list {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* line 811, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.pick-course .pick-up {
+  color: white;
+  background-color: black;
+}
+
+/* line 817, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.pick-games {
+  background-image: url(/assets/drink_pattern.png);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+/* line 823, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.pick-games .list {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* line 825, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.pick-games .pick-up {
+  font-weight: 600;
+  color: black;
+  background-color: white;
+}
+
+/* line 831, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.pick-games .btn {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* line 839, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.banner-pub_menu {
+  background-image: url(/assets/pub_menu_1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+/* line 850, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.bxslider li img {
+  width: 20%;
+  height: auto;
+  margin: 10px;
+}
+/** VARIABLES
+===================================*/
+/** RESET AND LAYOUT
+===================================*/
+
+.bx-wrapper {
+  position: relative;
+  margin-bottom: 60px;
+  padding: 0;
+  *zoom: 1;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+}
+.bx-wrapper img {
+  max-width: 100%;
+  display: block;
+}
+.bxslider {
+  margin: 0;
+  padding: 0;
+}
+ul.bxslider {
+  list-style: none;
+}
+.bx-viewport {
+  /*fix other elements on the page moving (on Chrome)*/
+  -webkit-transform: translatez(0);
+}
+/** THEME
+===================================*/
+.bx-wrapper {
+  -moz-box-shadow: 0 0 5px #ccc;
+  -webkit-box-shadow: 0 0 5px #ccc;
+  box-shadow: 0 0 5px #ccc;
+  border: 5px solid #fff;
+  background: #fff;
+}
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+  position: absolute;
+  bottom: -30px;
+  width: 100%;
+}
+/* LOADER */
+.bx-wrapper .bx-loading {
+  min-height: 50px;
+  background: url('images/bx_loader.gif') center center no-repeat #ffffff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+}
+/* PAGER */
+.bx-wrapper .bx-pager {
+  text-align: center;
+  font-size: .85em;
+  font-family: Arial;
+  font-weight: bold;
+  color: #666;
+  padding-top: 20px;
+}
+.bx-wrapper .bx-pager.bx-default-pager a {
+  background: #666;
+  text-indent: -9999px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  outline: 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active,
+.bx-wrapper .bx-pager.bx-default-pager a:focus {
+  background: #000;
+}
+.bx-wrapper .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+  display: inline-block;
+  vertical-align: bottom;
+  *zoom: 1;
+  *display: inline;
+}
+.bx-wrapper .bx-pager-item {
+  font-size: 0;
+  line-height: 0;
+}
+/* DIRECTION CONTROLS (NEXT / PREV) */
+.bx-wrapper .bx-prev {
+  left: 10px;
+  background: url('images/controls.png') no-repeat 0 -32px;
+}
+.bx-wrapper .bx-prev:hover,
+.bx-wrapper .bx-prev:focus {
+  background-position: 0 0;
+}
+.bx-wrapper .bx-next {
+  right: 10px;
+  background: url('images/controls.png') no-repeat -43px -32px;
+}
+.bx-wrapper .bx-next:hover,
+.bx-wrapper .bx-next:focus {
+  background-position: -43px 0;
+}
+.bx-wrapper .bx-controls-direction a {
+  position: absolute;
+  top: 50%;
+  margin-top: -16px;
+  outline: 0;
+  width: 32px;
+  height: 32px;
+  text-indent: -9999px;
+  z-index: 9999;
+}
+.bx-wrapper .bx-controls-direction a.disabled {
+  display: none;
+}
+/* AUTO CONTROLS (START / STOP) */
+.bx-wrapper .bx-controls-auto {
+  text-align: center;
+}
+.bx-wrapper .bx-controls-auto .bx-start {
+  display: block;
+  text-indent: -9999px;
+  width: 10px;
+  height: 11px;
+  outline: 0;
+  background: url('images/controls.png') -86px -11px no-repeat;
+  margin: 0 3px;
+}
+.bx-wrapper .bx-controls-auto .bx-start:hover,
+.bx-wrapper .bx-controls-auto .bx-start.active,
+.bx-wrapper .bx-controls-auto .bx-start:focus {
+  background-position: -86px 0;
+}
+.bx-wrapper .bx-controls-auto .bx-stop {
+  display: block;
+  text-indent: -9999px;
+  width: 9px;
+  height: 11px;
+  outline: 0;
+  background: url('images/controls.png') -86px -44px no-repeat;
+  margin: 0 3px;
+}
+.bx-wrapper .bx-controls-auto .bx-stop:hover,
+.bx-wrapper .bx-controls-auto .bx-stop.active,
+.bx-wrapper .bx-controls-auto .bx-stop:focus {
+  background-position: -86px -33px;
+}
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+  text-align: left;
+  width: 80%;
+}
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+  right: 0;
+  width: 35px;
+}
+/* IMAGE CAPTIONS */
+.bx-wrapper .bx-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #666;
+  background: rgba(80, 80, 80, 0.75);
+  width: 100%;
+}
+.bx-wrapper .bx-caption span {
+  color: #fff;
+  font-family: Arial;
+  display: block;
+  font-size: .85em;
+  padding: 10px;
+}
+.bx-wrapper{position:relative;margin-bottom:60px;padding:0;-ms-touch-action:pan-y;touch-action:pan-y;-moz-box-shadow:0 0 5px #ccc;-webkit-box-shadow:0 0 5px #ccc;box-shadow:0 0 5px #ccc;border:5px solid #fff;background:#fff}.bx-wrapper img{max-width:100%;display:block}.bxslider{margin:0;padding:0}ul.bxslider{list-style:none}.bx-viewport{-webkit-transform:translatez(0)}.bx-wrapper .bx-controls-auto,.bx-wrapper .bx-pager{position:absolute;bottom:-30px;width:100%}.bx-wrapper .bx-loading{min-height:50px;background:url(images/bx_loader.gif) center center no-repeat #fff;height:100%;width:100%;position:absolute;top:0;left:0;z-index:2000}.bx-wrapper .bx-pager{text-align:center;font-size:.85em;font-family:Arial;font-weight:700;color:#666;padding-top:20px}.bx-wrapper .bx-pager.bx-default-pager a{background:#666;text-indent:-9999px;display:block;width:10px;height:10px;margin:0 5px;outline:0;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px}.bx-wrapper .bx-pager.bx-default-pager a.active,.bx-wrapper .bx-pager.bx-default-pager a:focus,.bx-wrapper .bx-pager.bx-default-pager a:hover{background:#000}.bx-wrapper .bx-controls-auto .bx-controls-auto-item,.bx-wrapper .bx-pager-item{display:inline-block;vertical-align:bottom}.bx-wrapper .bx-pager-item{font-size:0;line-height:0}.bx-wrapper .bx-prev{left:10px;background:url(images/controls.png) 0 -32px no-repeat}.bx-wrapper .bx-prev:focus,.bx-wrapper .bx-prev:hover{background-position:0 0}.bx-wrapper .bx-next{right:10px;background:url(images/controls.png) -43px -32px no-repeat}.bx-wrapper .bx-next:focus,.bx-wrapper .bx-next:hover{background-position:-43px 0}.bx-wrapper .bx-controls-direction a{position:absolute;top:50%;margin-top:-16px;outline:0;width:32px;height:32px;text-indent:-9999px;z-index:9999}.bx-wrapper .bx-controls-direction a.disabled{display:none}.bx-wrapper .bx-controls-auto{text-align:center}.bx-wrapper .bx-controls-auto .bx-start{display:block;text-indent:-9999px;width:10px;height:11px;outline:0;background:url(images/controls.png) -86px -11px no-repeat;margin:0 3px}.bx-wrapper .bx-controls-auto .bx-start.active,.bx-wrapper .bx-controls-auto .bx-start:focus,.bx-wrapper .bx-controls-auto .bx-start:hover{background-position:-86px 0}.bx-wrapper .bx-controls-auto .bx-stop{display:block;text-indent:-9999px;width:9px;height:11px;outline:0;background:url(images/controls.png) -86px -44px no-repeat;margin:0 3px}.bx-wrapper .bx-controls-auto .bx-stop.active,.bx-wrapper .bx-controls-auto .bx-stop:focus,.bx-wrapper .bx-controls-auto .bx-stop:hover{background-position:-86px -33px}.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager{text-align:left;width:80%}.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto{right:0;width:35px}.bx-wrapper .bx-caption{position:absolute;bottom:0;left:0;background:#666;background:rgba(80,80,80,.75);width:100%}.bx-wrapper .bx-caption span{color:#fff;font-family:Arial;display:block;font-size:.85em;padding:10px}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+/*FONTS*/
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+
+
+/*MODULE*/
+/* 
+=========================
+      CSS RESET
+=========================
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video { margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline;}
+body {line-height:1;}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {display:block;}
+ul li{list-style:none;}
+a {margin: 0; padding: 0; border: 0; vertical-align: baseline; background: transparent; text-decoration: none; color: inherit; display: inline-block;}
+
+.clearfix:after {content: ""; display: block; clear: both;}
+
+/* 
+=========================
+    GRID SYSTEM RESET
+=========================
+*/
+
+.layout-wrapper {max-width: 1200px; margin: 0 auto;}
+
+[class*="col-"] {
+    width: 100%;
+    float: left;    
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.col-right{float: right;}
+.col-fit  {padding: 0;}
+
+@media (min-width:768px){
+    .col-1  {width: 8.33%;}
+    .col-2  {width: 16.66%;}
+    .col-3  {width: 25%;}
+    .col-4  {width: 33.33%;}
+    .col-5  {width: 41.66%;}
+    .col-6  {width: 50%;}
+    .col-7  {width: 58.33%;}
+    .col-8  {width: 66.66%;}
+    .col-9  {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+
+
+

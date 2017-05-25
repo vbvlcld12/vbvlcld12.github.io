@@ -1,0 +1,858 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+html, body{
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: #F6F6F6;
+    
+    // // kr fonts
+    // font-family: 'Noto Sans KR', sans-serif;
+    
+    // // en fonts
+    // font-family: 'Noto Sans', sans-serif;
+    // font-family: 'Shadows Into Light', cursive;
+}
+
+.table_cell {
+    width: 100%;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+.table_cell_btm {
+    width: 100%;
+    height: 100%;
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+.liner_bk {
+    width: 60px;
+    height: 2px;
+    margin: 30px 0px;
+    background-color: rgba(0,0,0,0.4);
+    display: inline-block;
+}
+
+.liner_wh {
+    width: 60px;
+    height: 2px;
+    margin: 30px 0px;
+    background-color: rgba(255,255,255,0.4);
+    display: inline-block;
+}
+
+.liner_bk_small {
+    width: 30px;
+    height: 2px;
+    margin: 10px;
+    background-color: rgba(0,0,0,0.4);
+    display: inline-block;
+}
+
+.liner_wrapper {
+    width: 100%;
+    height: 1px;
+    margin: 10px 0px;
+    background-color: rgba(255,255,255,0.2);
+    display: inline-block;
+}
+
+.liner_wrapper-bk {
+    width: 100%;
+    height: 1px;
+    margin: 20px 0px;
+    background-color: rgba(0,0,0,0.2);
+    display: inline-block;
+}
+
+
+// [GNB]
+[class*="gnb-"] {
+    font-family: 'Noto Sans', sans-serif;
+    color: rgba(255,255,255,0.8);
+    font-weight: 100;
+}
+
+//gnb-header
+.gnb-header {
+    width: 100%;
+    height: 12%;
+    display: table;
+    padding: 30px 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+    z-index: 1000;
+    position: fixed;
+}
+
+//to (count)
+.top { padding: 0 30px; }
+
+.count { float: left; }
+.count li { float: left; }
+
+.count li img, .count li p { float: left; }
+
+.count li img, .user li img {
+    width: auto;
+    height: 10px;
+    opacity: 0.8;
+    margin-right: 5px;
+}
+
+.count li {
+    font-size: 11px;
+    margin-top: 1px;
+    margin-right: 10px;
+}
+
+//top (user & bgm)
+.user { float: right; }
+
+.user li { 
+    float: left;
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+.user .bgm { margin-left: 10px; }
+
+.user li a { transition: all .2s ease-in-out; }
+.user li a:hover {
+    opacity: 0.6;
+    transition: all .2s ease-in-out;
+}
+
+//menu (nav)
+.menu {
+    width: 100%;
+    height: auto;
+    padding: 0px 30px;
+}
+
+.logo {
+    font-size: 30px;
+    float: left;
+}
+
+.menu ul { 
+    float: right;
+    margin-right: 50px;
+}
+
+.menu ul li { 
+    margin: 15px 10px 0 0;
+    font-size: 11px;
+    opacity: 0.8;
+    float: left; 
+}
+
+.menu ul li a { transition: all .2s ease-in-out; }
+.menu ul li a:hover { 
+    opacity: 0.6;
+    transition: all .2s ease-in-out;
+}
+
+// ****** MEDIA QUERY START ****** //
+@media (min-width:768px) {
+    //top (count menu & user menu & bgm)
+    .top { padding: 0 40px; }
+    
+    .count li {
+        font-size: 13px;
+        margin-right: 20px;
+    }
+    
+    .user li { 
+        float: left;
+        font-size: 13px;
+        margin-left: 30px;
+    }
+    
+    .user .bgm { margin-left: 20px; }
+    
+    //menu (nav)
+    .menu { padding: 0px 40px; }
+    
+    .logo { font-size: 40px; }
+    
+    .menu ul { 
+        float: right;
+        margin-right: 50px;
+    }
+    
+    .menu ul li { 
+        margin: 15px 30px 0 0;
+        font-size: 15px;
+        opacity: 0.8;
+        float: left; 
+    }
+}
+// ****** MEDIA QUERY END ****** //
+
+
+
+//[FOOTER]
+.gnb-footer {
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+    background-image: url(/assets/footer_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: black;
+}
+
+// menu (nav)
+.nav-footer { 
+    width: 100%;
+    height: auto;
+}
+
+.nav-footer .logo {
+    font-size: 26px;
+    margin-left: 30px;
+    float: left;
+}
+
+.nav-footer ul { 
+    float: right;
+    margin-right: 30px;
+}
+
+.nav-footer ul li { 
+    font-size: 11px;
+    opacity: 0.8;
+    margin: 12px 10px 0 0;
+    float: left;
+}
+
+.nav-footer ul li a { transition: all .2s ease-in-out; }
+.nav-footer ul li a:hover {
+    opacity: 0.6;
+    transition: all .2s ease-in-out;
+}
+
+//developer & tutor
+.developer, .tutor { 
+    padding: 0 30px;
+    float: left;
+}
+
+.developer ul li, .tutor ul li {
+    font-size: 13px;
+    margin-right: 15px;
+    text-align: center;
+    float: left;
+}
+
+[class*="face-"] {
+    width: 30px;
+    height: 30px;
+    opacity: 0.8;
+    border-radius: 20px;
+    display: inline-block;
+    transition: all .2s ease-in-out;
+}
+
+.face-1 { 
+    background-image: url(/assets/profile_jh.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.face-2 { 
+    background-image: url(/assets/profile_ch.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.face-3 { 
+    background-image: url(/assets/profile_lh.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.face-4 { 
+    background-image: url(/assets/profile_wj.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.face-5 { 
+    background-image: url(/assets/profile_wd.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.face-6 { 
+    background-image: url(/assets/profile_ij.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.face-7 { 
+    background-image: url(/assets/profile_hj.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.face-8 { 
+    background-image: url(/assets/profile_cy.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.female { margin-top: 5px; }
+
+.male a, .female a { transition: all .2s ease-in-out; }
+.male a:hover, .female a:hover {
+    opacity: 0.6;
+    transition: all .2s ease-in-out;
+}
+
+.developer li p, .tutor li p {
+    opacity: 0.7;
+    margin-top: 3px;
+}
+
+
+
+//sns
+.sns { 
+    padding: 0 30px;
+    text-align: right;
+    float: right;
+}
+
+.sns h4 { margin-top: 48px; }
+
+.sns ul { float: right; }
+.sns ul li { float: left; }
+
+.sns a { 
+    margin-left: 10px;
+    transition: all .2s ease-in-out;
+}
+.sns a:hover {
+    opacity: 0.6;
+    transition: all .2s ease-in-out;
+}
+
+.sns a img {
+    width: auto;
+    height: 26px;
+    opacity: 0.8;
+}
+
+
+
+//developer & sns
+.developer h4, .sns h4, .tutor h4 {
+    font-size: 11px;
+    font-weight: 100;
+    opacity: 0.9;
+    margin-bottom: 10px;
+}
+
+//copyright
+.copyright {
+    font-size: 12px;
+    text-align: center;
+    display: block;
+    margin-top: 30px;
+    opacity: 0.9;
+}
+
+// ****** MEDIA QUERY START ****** //
+@media (min-width: 768px) {
+    // menu (nav)
+    .nav-footer .logo {
+        width: auto;
+        height: 30px;
+        font-size: 30px;
+        margin-left: 40px;
+        float: left;
+    }
+    
+    .nav-footer ul { margin-right: 40px; }
+    
+    .nav-footer ul li { 
+        font-size: 13px;
+        margin: 15px 30px 0 0;
+    }
+    
+    // developer
+    .developer, .tutor { padding: 0 30px; }
+    
+    [class*="face-"] {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .male, .female { float: left; }
+    .female { margin-top: 0px; }
+    
+    //sns
+    .sns { padding: 0 40px; }
+    
+    .sns h4 { margin-top: 0px; }
+    
+    .sns a img { height: 30px; }
+    
+    //developer & sns
+    .developer h4, .sns h4, .tutor h4 {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+    
+    .developer ul li, .tutor ul li {
+        font-size: 11px;
+        margin-right: 20px;
+    }
+    
+    .developer li p, .tutor li p {  margin-top: 5px; }
+    
+    //copyright
+    .copyright {
+        font-size: 14px;
+        margin-top: 40px;
+    }
+}
+// ****** MEDIA QUERY END ****** //
+
+
+
+// [ INDEX ]
+
+//header_banner
+.banner_head {
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/banner_head_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    display: table;
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+}
+
+.banner_head h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.sub_title {
+    font-size: 18px;
+    margin-bottom: 40px;
+    opacity: 0.7;
+}
+
+.date {
+    font-size: 10px;
+    opacity: 0.6;
+}
+
+
+// ****** MEDIA QUERY START ****** //
+@media (min-width: 768px) {
+    .banner_head h1 {
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+    
+    .sub_title { font-size: 24px; }
+    .date { font-size: 14px; }
+}
+
+// ****** MEDIA QUERY END ****** //
+
+
+// section
+[class*="img-"] {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(175,175,175);
+}
+
+[class*="txt-"] {
+    width: 50%;
+    height: 100%;
+    display: table;
+}
+
+[class*="txt-"] h2 {
+    font-size: 30px;
+    opacity: 0.9;
+}
+
+[class*="txt-"] p {
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: -0.05em;
+    font-family: 'Noto Sans KR', sans-serif;
+    opacity: 0.7;
+}
+
+.btn {
+    margin-top: 30px;
+    font-size: 12px;
+    text-align : center;
+    padding: 10px 20px;
+    color: rgba(255,255,255,0.9);
+    background-color: rgba(0,0,0,0.8);
+    transition: all .2s ease-in-out;
+    // border-radius: 6px;
+}
+
+.btn:hover {
+    opacity: 0.6;
+    transition: all .2s ease-in-out;
+}
+
+// section_ NOL-PAGO
+.nol-pago {
+    width: 100%;
+    height: 100%;
+}
+
+.nol-pago .left { float: left; }
+.nol-pago .right { display: table; }
+
+.nol-pago .table_cell, .pub-menu .table_cell { 
+    color: black;
+    padding: 30px;
+}
+
+.img-1 {
+    background-image: url(/assets/nol_pago_home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    background-attachment: fixed;
+}
+
+
+// section_ PUB MENU
+.pub-menu {
+    width: 100%;
+    height: 100%;
+}
+
+.pub-menu .left, .pub-menu .right { float: left; }
+
+.pub-menu .left { display: table; }
+
+.pub-menu .table_cell { text-align: right; }
+
+.img-2 {
+    background-image: url(/assets/pub_menu_home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    background-attachment: fixed;
+}
+
+// section LINE UP
+.line-up {
+    width: 100%;
+    height: auto;
+    background-image: url(/assets/line_up_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    text-align: center;
+    color: black;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.line-up h2 {
+    font-size: 30px;
+    padding-top: 40px;
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+.line-up p {
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    opacity: 0.7;
+}
+
+.card li { padding: 10px; }
+
+.card_bg {
+    padding: 20px;
+    background-color: rgba(255,255,255,0.9);
+}
+
+[class*="card-box-"] {
+    width: 100%;
+    height: 100%;
+}
+
+.card-box-1 {
+    background-image: url(/assets/card_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+// .line-up li {
+//     background-color: rgba(255,255,255,0.9);
+//     padding: 20px;
+//     text-align: center;
+//     transition: all .2s ease-in-out;
+// }
+
+// .line-up li a {
+//     width: 100%;
+//     height: 100%;
+// }
+
+// .card-box-1 {
+//     width: 100%;
+//     height: 100%;
+//     margin-bottom: 20px;
+//     background-image: url(/assets/card_1.png);
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: top center;
+// }
+
+
+// .card li { 
+//     float: left; }
+
+// .card_bg {
+//     height: 100%;
+//     padding: 20px;
+//     color: black;
+//     background-color: rgba(255,255,255,0.9);
+// }
+
+// .card_bg h3 {
+//     font-size: 16px;
+//     font-weight: 600;
+//     letter-spacing: -0.01em;
+//     margin-top: 20px;
+//     opacity: 0.9;
+// }
+
+.line-up .btn {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+// [class*="card-box-"] {
+//     width: 100%;
+//     height: 100%;
+//     margin: 20px;
+// }
+
+// .card-box-1 {
+//     background-image: url(/assets/card_1.png);
+//     background-repeat: no-repeat;
+//     background-size:cover;
+// }
+
+
+// ****** MEDIA QUERY START ****** //
+@media (min-width: 768px) {
+    //section
+    [class*="txt-"] h2 { font-size: 40px; }
+    
+    [class*="txt-"] p { font-size: 14px; }
+    
+    .btn {
+        margin-top: 40px;
+        font-size: 14px;
+        // border-radius: 6px;
+    }
+
+    // section_ nol-pago & pub-menu
+    .nol-pago { height: 70%; }
+    
+    .img-1 { background-size: contain; }
+    
+    .nol-pago .table_cell, .pub-menu .table_cell { padding: 40px; }
+    
+    //section_ line up
+    .line-up h2 { font-size: 40px; }
+    
+    .line-up p { font-size: 14px; }
+}
+// ****** MEDIA QUERY END ****** //
+
+
+
+
+// SUB
+[class*="banner-"] {
+    width: 100%;
+    height: 80%;
+    display: table;
+    text-align: center;
+}
+
+[class*="banner-"] h2 {
+    font-size: 60px;
+    font-family: 'Noto Sans', sans-serif;
+    opacity: 0.9;    
+}
+
+[class*="banner-"] p {
+    font-size: 12px;
+    font-weight: 100;
+    line-height: 150%;
+    opacity: 0.8;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+// sub1, nol-pago
+.banner-nol_pago {
+    background-image: url(/assets/nol_pago_1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.nol-pago-face {
+    width: 200px;
+    height: auto;
+    opacity: 0.9;
+    margin-bottom: 10px;
+}
+
+.nol-pago-talk {
+    font-size: 30px;
+    font-family: 'Noto Sans', sans-serif;
+    margin-bottom: 10px;
+}
+
+.pick-course, .pick-games {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: table;
+}
+
+.how-to-play {
+    font-size: 11px;
+    opacity: 0.8;
+}
+
+.list {
+    padding: 20px;
+    border: 2px solid rgba(0,0,0,0.2); 
+    display: inline-block;
+    margin-top: 40px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.pick-course ul li, .pick-course ul li p, .pick-games ul li, .pick-games ul li p { float: left; }
+
+.pick-up {
+    font-size: 30px;
+    opacity: 0.9;
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.pick-up-and {
+    font-size: 18px;
+    opacity: 0.7;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+.reset {
+    margin-top: 40px;
+    position:relative;
+    border-bottom: 4px solid black;
+    border-radius: 2px;
+    transition: all .2s eas-in-out;
+}
+
+.reset:hover {
+    top: 2px;
+}
+
+.reset img {
+    width: auto;
+    height: 11px;
+    margin-left: 5px;
+}
+
+//section - course
+.pick-course {
+    background-image: url(/assets/course_pattern.png);
+    background-color: rgba(255,255,255,0.8);
+    color: black;
+}
+
+.pick-course .nol-pago-talk {
+    font-weight: 600;
+}
+
+.pick-course .list { background-color: rgba(255,255,255,0.4); }
+
+.pick-course .pick-up {
+    color: white;
+    background-color: black;
+}
+
+//section - games 
+.pick-games {
+    background-image: url(/assets/drink_pattern.png);
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+}
+
+.pick-games .list { background-color: rgba(0,0,0,0.4); }
+
+.pick-games .pick-up {
+    font-weight: 600;
+    color: black;
+    background-color: white;
+}
+
+.pick-games .btn {
+    font-weight: 600;
+    color: rgba(0,0,0,0.9);
+    background-color: rgba(255,255,255,0.8);
+}
+
+
+//sub2, pub-menu
+.banner-pub_menu {
+    background-image: url(/assets/pub_menu_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+
+
+// [ SUB2 ]
+.bxslider li img {
+    width: 20%;
+    height: auto;
+    margin: 10px;
+}
+
+
+
+

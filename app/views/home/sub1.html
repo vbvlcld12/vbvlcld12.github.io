@@ -1,0 +1,59 @@
+<section class="banner-nol_pago">
+    <div class="table_cell">
+        <h2>NOL-PAGO</h2>
+        <div class="liner_wh"></div>
+        <p>맛있는 음식과 재미난 볼거리! 하지만 어떻게 놀아야 할 지 아직도 못정했다면?<br>
+            더 이상 고민떄문에 시간 낭비 하지 마세요! 축제는 우리를 기다려 주지 않으니까요.<br><br>
+            단 3일 동안의 축제, 후회 없이 즐기고 싶다면? 지금 당장 놀파고에게 물어보세요.
+            <br>인공지능 놀파고가 여러분의 고민을 스마트하게 해결해 드립니다!
+        </p>
+            
+    </div>
+</section>
+
+<section class="pick-course">
+    <div class="table_cell">
+        <p><img src="/assets/icon_nol_pago_course.png" class="nol-pago-face"></p>
+        <p class="nol-pago-talk">course!</p>
+        <p class="how-to-play">놀파고가 추천 해주는대로!</p>
+        <ul class="list clearfix">
+            <li class="clearfix">
+                <p class="pick-up"><%= @food %></p>
+                <p class="pick-up-and"> 을(를) 먹고,</p>
+            </li>
+            <li class="clearfix">
+                <p class="pick-up"><%= @place %></p>
+                <p class="pick-up-and"> 에 갔다가,</p>
+            </li>
+            <li class="clearfix">
+                <p class="pick-up"><%= @act %></p>
+                <p class="pick-up-and"> 을(를) 해봐!</p>
+            </li>
+        </ul>
+        <p><a href="/home/sub1" class="btn reset">놀파고 실행<img src="/assets/icon_reset.png"></a></p>
+    </div>
+</section>
+
+<section class="pick-games">
+    <div class="table_cell">
+        <p><img src="/assets/icon_nol_pago_games.png" class="nol-pago-face"></p>
+        <p class="nol-pago-talk">games!</p>
+        <p class="how-to-play">놀파고가 시키는대로!</p>
+        <!--꽝! 이 나왔을때만 벌칙 출력하도록 만들기!-->
+        <ul class="list clearfix">
+            <li class="clearfix">
+                <p class="pick-up"><%= @luck %></p>
+                <p class="pick-up-and"> 이래요~! </p>
+            </li>
+            <li class="clearfix">
+                <p class="pick-up"><%= @who %></p>
+                <p class="pick-up-and"> 사람에게,</p>
+            </li>
+            <li class="clearfix">
+                <p class="pick-up"><%= @penalty %></p>
+                <p class="pick-up-and"> 하기!</p>
+            </li>
+        </ul>
+        <p><a href="/home/sub1" class="btn reset">놀파고 실행<img src="/assets/icon_reset_bk.png"></a></p>
+    </div>
+</section>
